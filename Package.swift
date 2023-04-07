@@ -21,6 +21,10 @@ let package = Package(
         .target(
             name: "testAPPD",
             dependencies: []),
+        .binaryTarget(
+            name: "ADEUMInstrumentation",
+            path: "Framework/ADEUMInstrumentation.xcframework"
+        ),
         .testTarget(
             name: "testAPPDTests",
             dependencies: ["testAPPD"]),
